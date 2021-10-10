@@ -1,0 +1,136 @@
+.ProductIsInStock {
+  width: 71%;
+  margin-left: 30px;
+}
+.HeaderProductIsInStock {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d5d5d5;
+}
+.ImageBurgerProductIsInStock {
+  display: flex;
+  align-items: center;
+}
+.ImageBurgerProductIsInStock img {
+  width: 16px;
+  height: 14px;
+  margin-right: 15px;
+}
+.ImageBurgerProductIsInStock p {
+  margin-top: 15px;
+}
+.LanguageSettingsProductIsInStock {
+  display: flex;
+  align-items: center;
+  width: 130px;
+  justify-content: space-between;
+}
+.LanguageSettingsProductIsInStock img {
+  width: 10px;
+  height: 6px;
+  margin-left: 7px;
+}
+.LanguageSettingsProductIsInStock p {
+  margin-top: 15px;
+}
+.LanguageProductIsInStock {
+  display: flex;
+  align-items: center;
+}
+.KolokolProductIsInStock img {
+  width: 18px;
+  height: 21px;
+}
+.NavigationLineProductIsInStock {
+  border-bottom: 1px solid #d5d5d5;
+}
+.NavigationLineProductIsInStock p {
+  padding: 10px 0 10px 0;
+  margin: 0;
+}
+.NavigationProductIsInStock {
+  display: flex;
+  width: 420px;
+  margin-top: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ced4da;
+  margin-bottom: 20px;
+}
+.Search {
+  position: relative;
+}
+.SearchIcon {
+  position: absolute;
+  left: 9px;
+  top: 6px;
+}
+.Search input {
+  padding-left: 33px;
+}
+.ProductIsInStockMainContentTop {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid #ced4da;
+  align-items: center;
+}
+.AllProduct .CountActive,
+.InStock p,
+.Ended p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.InStockProduct {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+.ArtikulProduct {
+  width: 74px;
+  font-size: 14px;
+  margin-left: 24px;
+  padding-top: 5px;
+}
+.PhotosProduct {
+  width: 40px;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.BarcodeProduct {
+  width: 100px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+.NameProduct {
+  width: 250px;
+  font-size: 14px;
+  color: #17a2b8;
+}
+.PriceProduct {
+  width: 100px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+.InStockProducts {
+  width: 100px;
+  font-size: 14px;
+  color: #17a2b8;
+  padding-top: 5px;
+}
+.inWarehouseProduct {
+  width: 100px;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.ModalStock {
+  width: 400px;
+  position: fixed;
+  bottom: 200px;
+  right: 200px;
+  background-color: white;
+}
