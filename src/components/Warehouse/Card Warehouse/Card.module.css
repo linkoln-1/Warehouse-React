@@ -1,72 +1,61 @@
 .CardWarhouse {
-    border: 1px solid #ced4da;
-    width: 600px;
-    padding: 15px;
-    border-radius: 4px;
-    margin-top: 30px;
+  border: 1px solid #ced4da;
+  width: 576px;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 30px;
 }
 .WarhouseKazanText p {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 .WarhouseKazanText {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .Workhourse {
-    display: flex;
-    width: 335px;
-    justify-content: space-between;
-    padding-top: 25px;
+  display: flex;
+  width: 335px;
+  justify-content: space-between;
+  padding-top: 25px;
 }
 
 .Workhourse div span {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .InStock {
-    display: flex;
-    width: 460px;
-    justify-content: space-between;
+  display: flex;
+  width: 460px;
+  justify-content: space-between;
 }
 .InStockText {
-    display: flex;
+  display: flex;
 }
 .productsinstock {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .productsinstock:hover {
-    color: #000;
+  color: #000;
 }
 .ProductInStock {
-    display: flex;
-    width: 410px;
-    justify-content: space-between;
-    padding-top: 25px;
+  display: flex;
+  width: 410px;
+  justify-content: space-between;
+  padding-top: 25px;
 }
 .Methods {
-    display: flex;
-    width: 565px;
-    justify-content: space-between;
-    padding-top: 40px;
+  display: flex;
+  width: 565px;
+  justify-content: space-between;
+  padding-top: 40px;
+  align-items: center;
 }
 .AddMethods {
-    display: flex;
-    padding-top: 30px;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  background-color: #FAFAFA;
+  padding: 8px;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

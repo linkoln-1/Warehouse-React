@@ -8,13 +8,15 @@ import { useSelector } from "react-redux";
 function NavigationProductIsInStock(props) {
   //Требуется Доработка Функционала
 
-  const products = useSelector((state) => state.WarehouseProduct.WarehouseProduct);
+  const products = useSelector(
+    (state) => state.WarehouseProduct.WarehouseProduct
+  );
   const loading = useSelector((state) => state.WarehouseProduct.loading);
   return (
     <div>
       {loading
         ? ""
-        : products.map((product,index) => {
+        : products.map((product, index) => {
             return (
               <div className={styles.NavigationProductIsInStock} key={index}>
                 <AllProduct count={product} />

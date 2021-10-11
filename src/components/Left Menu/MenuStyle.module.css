@@ -1,121 +1,134 @@
 .Menu {
-    background-color: #2a3844;
-    width: 23%;
+  background-color: #2a3844;
+  width: 23%;
 }
 .img {
-    width: 50px;
-    height: 50px;
-    border-radius: 60%;
-    margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  margin: 10px 10px 0 10px;
 }
 .MenuDisplayFlex {
-    display: flex;
+  display: flex;
+}
+.MenuHeaderText {
+  margin-top: 10px;
 }
 .MenuHeaderText span {
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
 }
 .MenuHeaderText p {
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
 }
 .finance {
-    background-color: #1c2933;
-    display: flex;
-    justify-content: space-between;
+  background-color: #1c2933;
+  display: flex;
+  justify-content: space-between;
 }
 .textFinance {
-    margin-left: 20px;
-
+  margin-left: 20px;
 }
 .textFinance p {
-    font-weight: 400;
-    color: white;
-    font-size: 18px;
+  font-weight: 400;
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
 }
 .AddCasch img {
-    width: 24px;
-    height: 24px;
-    margin-right: 20px;
-    margin-top: 15px;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  margin-top: 15px;
 }
 .NameCompany p {
-    font-size: 19px;
-    font-weight: bold;
-    color: white;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
 }
 .NameCompany {
-    padding-top: 20px;
-    margin-left: 20px;
+  padding-top: 20px;
+  margin-left: 20px;
 }
 .KleineMenu {
-    margin-left: 20px;
+  margin-left: 36px;
 }
 .KleineMenu p {
-    color: white;
-    font-size: 18px;
+  color: white;
+  font-size: 18px;
+}
+.KleineMenu .Sklad {
+  margin: 0;
+}
+.KleineMenu p:hover {
+  color: #6c757d;
 }
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
-a.Selected p {
-   background-color: white;
-    color: #2a3844;
-    width: 210px;
-    padding: 10px 0 10px 11px;
-    border-radius: 3px;
+a.Selected .Sklad p {
+  background-color: white;
+  color: #2a3844;
+  padding: 10px 0 10px 11px;
+  margin: 0;
+  border-radius: 3px;
 }
-a.Selected div p {
-    padding: 11px 128px 11px 15px;
+.Sklad p {
+  margin: 0;
+}
+a.Selected .Sklad {
+  width: 210px;
 }
 .Settings {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 .Settings img {
-    width: 19px;
-    height: 19px;
-    margin-right: 7px;
+  width: 19px;
+  height: 19px;
+  margin-right: 7px;
 }
 .Settings p {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .Footer {
-    margin-top: 200px;
-    box-shadow: 0 -12px 8px -7px rgba(0, 0, 0, 0.41);
-    padding-top: 20px;
+  margin-top: 200px;
+  box-shadow: 0 -12px 8px -7px rgba(0, 0, 0, 0.41);
+  padding-top: 20px;
 }
 .Button {
-    color: white;
-    border: 1px solid white;
-    width: 220px;
-    margin-left: 20px;
-    padding: 9px 20px 10px;
-    text-align: center;
+  color: white;
+  border: 1px solid white;
+  width: 220px;
+  margin-left: 20px;
+  padding: 9px 20px 10px;
+  text-align: center;
 }
 .policy {
-    width: 305px;
-    margin: 10px auto;
+  width: 305px;
+  margin: 10px auto;
 }
 .policy p {
-    color: white;
-    font-size: 17px;
+  color: white;
+  font-size: 17px;
 }
 .WhatsApp {
-    display: flex;
-    align-items: center;
-    font-size: 17px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
 }
 .WhatsApp img {
-    width: 20px;
-    height: 20px;
-    margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
 }
 .WhatsApp p {
-    margin-left: 7px;
-    margin-top: 15px;
+  margin-left: 7px;
+  margin-top: 15px;
 }

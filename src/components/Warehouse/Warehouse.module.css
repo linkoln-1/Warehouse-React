@@ -1,52 +1,50 @@
 .Warehouse {
-    width: 72%;
-    margin-left: 30px;
+  width: 72%;
+  margin-left: 30px;
 }
 .HeaderWarehouse {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #d5d5d5;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d5d5d5;
 }
 .imageBurgerMenu {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .imageBurgerMenu img {
-    width: 16px;
-    height: 14px;
-    margin-right: 15px;
+  width: 16px;
+  height: 14px;
+  margin-right: 15px;
 }
 .imageBurgerMenu p {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .LanguageSetting {
-    display: flex;
-    align-items: center;
-    width: 130px;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 130px;
+  justify-content: space-between;
 }
 .LanguageSetting img {
-    width: 10px;
-    height: 6px;
-    margin-left: 7px;
+  width: 10px;
+  height: 6px;
+  margin-left: 7px;
 }
 .LanguageSetting p {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .kolokol img {
-    width: 18px;
-    height: 21px;
+  width: 18px;
+  height: 21px;
 }
 .Language {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .Navigation {
-    border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
 }
 .Navigation p {
-    color:#A5A5A5 ;
-    margin-top: 15px;
+  color: #a5a5a5;
+  margin-top: 15px;
 }
-
-

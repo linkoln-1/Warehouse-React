@@ -4,7 +4,6 @@ import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 import Redactive from "./Readctive";
 
 let prev = 0;
-let next = 0;
 let last = 0;
 
 class Product extends React.Component {
@@ -14,12 +13,12 @@ class Product extends React.Component {
       product: this.props.product.data.productsInfoList,
       currentPage: 1,
       productPerPage: 10,
-      isActive:true
+      isActive: true,
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleLastClick = this.handleLastClick.bind(this);
     this.handleFirstClick = this.handleFirstClick.bind(this);
-    this.handleAdd = this.handleAdd.bind(this)
+    this.handleAdd = this.handleAdd.bind(this);
   }
 
   handleClick(event) {
@@ -40,17 +39,16 @@ class Product extends React.Component {
       currentPage: 1,
     });
   }
-  handleAdd(event){
-    event.preventDefault();
+  handleAdd(event) {
     this.setState({
-      isActive: !this.state.isActive
-    })
+      isActive: !this.state.isActive,
+    });
   }
 
   render() {
     const { product, currentPage, productPerPage } = this.state;
 
-    // Logic for displaying todos
+    // Logic for displaying product
     const indexOfLastProduct = currentPage * productPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productPerPage;
     const currentProduct = product.slice(
@@ -59,7 +57,6 @@ class Product extends React.Component {
     );
     prev = currentPage > 0 ? currentPage - 1 : 0;
     last = Math.ceil(product.length / productPerPage);
-    next = last === currentPage ? currentPage : currentPage + 1;
 
     // Logic for displaying page numbers
     const pageNumbers = [];
@@ -77,7 +74,7 @@ class Product extends React.Component {
               <div className={styles.NameProduct}>{product.name}</div>
               <div className={styles.PriceProduct}>{product.price}₽</div>
               <div className={styles.InStockProducts} onClick={this.handleAdd}>
-                {product.currentStock}
+                <p> {product.currentStock}</p>
               </div>
               {this.state.isActive ? "" : <Redactive product={product} />}
               <div className={styles.inWarehouseProduct}>

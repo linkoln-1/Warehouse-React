@@ -1,140 +1,141 @@
 .AddWarehouseButton {
-    border: 2px solid #17a2b8;
-    width: 200px;
-    text-align: center;
-    margin-top: 30px;
-    color: #17a2b8;
-    padding:5px;
-    font-size: 16px;
-    border-radius: 3px;
-    background: none;
-    cursor: pointer;
+  border: 2px solid #17a2b8;
+  width: 200px;
+  text-align: center;
+  margin-top: 30px;
+  color: #17a2b8;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 3px;
+  background: none;
+  cursor: pointer;
 }
-.Modal {
-    width: 100%;
-    min-height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    right: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    overflow-y: scroll;
+.modalRight {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  transform: scale(0);
+  overflow-y: scroll;
 }
 .header_modal {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .button_modal button {
-    border: none;
-    color: red;
-    background-color: white;
-    font-size: 19px;
-    font-weight: 600;
+  border: none;
+  color: red;
+  background-color: white;
+  font-size: 19px;
+  font-weight: 600;
 }
 .modal_content {
-    width: 40%;
-    min-height: 100vh;
-    border-radius: 12px 0 0 12px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 40px;
-    background-color: white;
+  width: 40%;
+  min-height: 100vh;
+  border-radius: 12px 0 0 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 40px;
+  background-color: white;
 }
-.modal.active {
-    transform: scale(1);
+.Modal.active {
+  transform: scale(1);
 }
 .day_working {
-    border: 1px solid lightgray;
-    background-color: #fff;
-    color: black;
-    border-radius: 5px;
-    padding: 10px 15px 10px 15px;
-    cursor: pointer;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
 }
 .day_working_select {
-    border: 1px solid lightgray;
-    background-color: #17a2b8;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 15px 10px 15px;
+  border: 1px solid lightgray;
+  background-color: #17a2b8;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
 }
 .dropdown {
-    user-select: none;
-    margin-top: 15px;
-    position: relative;
+  user-select: none;
+  margin-top: 15px;
+  position: relative;
 }
 .dropdown .dropdown-btn {
-    padding: 10px 13px;
-    background: #fff;
-    border: 1px solid #000;
-    font-weight: bold;
-    color: #333;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    justify-content: space-between;
+  padding: 10px 13px;
+  background: #fff;
+  border: 1px solid #000;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
 }
 .dropdown .dropdown-content {
-    position: absolute;
-    top: 110%;
-    left: 0;
-    padding: 10px;
-    background: #fff;
-    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
-    font-weight: 500;
-    color: #333;
-    width: 100%;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+  color: #333;
+  width: 100%;
 }
 .dropdown .dropdown-content .dropdown-item {
-    padding: 10px;
-    cursor: pointer;
-    transition: all 0.2s;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 .dropdown .dropdown-content .dropdown-item:hover {
-    background: #f4f4f4;
+  background: #f4f4f4;
 }
-.delivery_method{
-    width: 100%;
-    font-weight: 500;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid lightgray;
-    margin-top: 10px;
-    cursor: pointer;
+.delivery_method {
+  width: 100%;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  margin-top: 10px;
+  cursor: pointer;
 }
-.delivery_method_title{
-    font-size: 18px;
-    font-weight: 500;
+.delivery_method_title {
+  font-size: 18px;
+  font-weight: 500;
 }
-.delivery_method_sub_title{
-    font-size: 14px;
-    color: #A5A5A5;
-    font-weight: 400;
+.delivery_method_sub_title {
+  font-size: 14px;
+  color: #a5a5a5;
+  font-weight: 400;
 }
-.delivery_method_button{
-    margin-top: 30px;
-    padding: 10px 20px;
-    color: white;
-    border: none;
-    background-color: #CED4DA;
-    border-radius: 3px;
-    font-size: 18px;
+.delivery_method_button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  background-color: #ced4da;
+  border-radius: 3px;
+  font-size: 18px;
 }
-.delivery_method_select{
-    color: #17a2b8;
-    border: 1px solid #17A2B8;
+.delivery_method_select {
+  color: #17a2b8;
+  border: 1px solid #17a2b8;
 }
-.delivery_method_button_active{
-    background-color: #17a2b8;
+.delivery_method_button_active {
+  background-color: #17a2b8;
 }
-.color_blue{
-    color: #17A2B8;
+.color_blue {
+  color: #17a2b8;
 }
 
-.button_blue_step2{
-    background-color: inherit;
-    border: 1px solid #17a2b8;
-    color: #17a2b8;
+.button_blue_step2 {
+  background-color: inherit;
+  border: 1px solid #17a2b8;
+  color: #17a2b8;
 }
