@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./ProductIsInStock.module.css";
 import { NavLink } from "react-router-dom";
 
-function AllProduct({ count }) {
+function AllProduct({ total }) {
   return (
     <div className={styles.AllProduct}>
-      <NavLink to="" activeClassName="Active">
-        <span className="CountActive_1">Все Товары</span>
-        <span className="CountActive_2">({count.data.totalCount})</span>
+      <NavLink to="" activeClassName={styles.Active}>
+        <span className={styles.CountActive_1}>Все Товары</span>
+        <span className={styles.CountActive_2}>({total})</span>
       </NavLink>
     </div>
   );

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Card from "./Card";
 import { WarehouseCardInfo, WarehouseProduct } from "../../../redux/actions";
 import Modal from "../Modal/index";
-import {Route} from "react-router-dom";
+import { Route } from "react-router-dom";
 
 function CardWarehouse(props) {
   const dispatch = useDispatch();
@@ -24,7 +24,9 @@ function CardWarehouse(props) {
       ) : (
         <div>
           {CardInfo.map((item, index) => {
-            return <Card item={item} key={index} product={i} />;
+            return (
+              <Card item={item} key={index} product={i} total={props.item} />
+            );
           })}
         </div>
       )}

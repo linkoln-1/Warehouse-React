@@ -140,15 +140,20 @@
 .Big_border {
   width: 100%;
   margin-top: 20px;
-  border: 1px solid #a5a5a5;
+  border: 1px solid #ced4da;
 }
 .Small_border_bottom {
-  border-bottom: 1px solid #a5a5a5;
+  border-bottom: 1px solid #ced4da;
   display: flex;
   justify-content: space-between;
   background-color: #f3f3f37d;
 }
-.selectCity_1, .selectedCity_2 {
+.selectCity_1,
+.selectedCity_2,
+.selectedCity_4,
+.selectCity_5,
+.selectCity_6,
+.selectCity_7 {
   display: flex;
   margin-left: 10px;
 }
@@ -156,34 +161,61 @@
   margin-right: 10px;
   margin-top: 20px;
 }
-.selectCity_1 img, .selectedCity_2 img, .selectedCity_3 img  {
+.selectCity_1 img,
+.selectedCity_2 img,
+.selectedCity_3 img,
+.selectedCity_4 img,
+.selectCity_7 img {
   margin: 14px 10px 0 10px;
 }
 .selectedCity_2 img {
-  transform: rotate(90deg)
+  transform: rotate(90deg);
 }
-.selectedCity_2 div input, .selectedCity_3 div input {
+.selectedCity_2 div input,
+.selectedCity_3 div input,
+.selectedCity_4 div input,
+.selectCity_7 div input {
   margin-right: 10px;
   margin-top: 20px;
 }
 .selectedCity_3 {
   display: flex;
-  margin-left: 35px;
+  margin-left: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.selectedCity_4 {
+  margin-left: 25px;
+}
+.selectCity_5 input,
+.selectCity_6 input {
+  margin: 6px 10px 0 40px;
+}
+.selectCity_5,
+.selectCity_6 {
+  margin-top: 10px;
+}
+.SelectedCity {
+  width: 330px;
+}
+.DisplayFlexBlock {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.Federal_okr {
+  display: flex;
+}
+.Count_Days_Delivery {
+  margin-right: 20px;
+}
+.count_Total {
+  margin: 0 6px 0 6px;
+}
+.count_Total span {
+  color: #17a2b8;
+}
+.minus span {
+  color: #a5a5a5;
+}
+.plus span {
+  color: #a5a5a5;
+}

@@ -3,7 +3,9 @@ export const warehouseInfo = () => {
     dispatch({
       type: "WarehouseInfo/load/start",
     });
-    fetch(`http://212.193.50.181:8080/api/warehouse/manage`)
+    fetch(
+      `http://212.193.50.181:8080/api/warehouse/manage?includeNonActive=true `
+    )
       .then((res) => res.json())
       .then((json) => {
         dispatch({
@@ -20,7 +22,7 @@ export const WarehouseCardInfo = (id) => {
       type: "cardInfo/load/start",
     });
     fetch(
-      `http://212.193.50.181:8080/api/warehouse/manage/byExternal?externalId=${id}&marketplaceKind=Ozon `
+      `http://212.193.50.181:8080//api/warehouse/manage/byExternal?externalId=${id}&marketplaceKind=Ozon `
     )
       .then((response) => response.json())
       .then((json) => {
@@ -44,6 +46,22 @@ export const WarehouseProduct = (id) => {
       .then((data) => {
         dispatch({
           type: "WarehouseProduct/load/success",
+          payload: data,
+        });
+      });
+  };
+};
+
+export const SaveCurrentInStock = (current) => {
+  return (dispatch) => {
+    dispatch({
+      type: "save/load/start",
+    });
+    fetch(`http://212.193.50.181:8080/api/warehouse/manage/products/remains`)
+      .then((response) => response.json())
+      .then((data) => {
+        dispatch({
+          type: "save/load/success",
           payload: data,
         });
       });

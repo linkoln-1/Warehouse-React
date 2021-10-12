@@ -13,13 +13,13 @@ function MenuProperties(props) {
       <p>Отгрузки и склады</p>
       <p>Заказы</p>
       <p>Аналитика</p>
-     <NavLink activeClassName={styles.Selected} to="/warehouse">
-      <div className={styles.Sklad}>
-       <p>Склады</p>
-      </div>
-     </NavLink>
+      <NavLink activeClassName={styles.Selected} to="/warehouse">
+        <div className={styles.Sklad}>
+          <p>Склады</p>
+        </div>
+      </NavLink>
 
-     <div className={styles.Settings}>
+      <div className={styles.Settings}>
         <img src={settings} alt="" />
         <p>Настройки</p>
       </div>

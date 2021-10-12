@@ -14,7 +14,7 @@ function Step2({ Close }) {
 
   const handleStep3 = () => {
     history.push("/warehouse/add_warehouse/step3");
-  }
+  };
   return (
     <div
       className="modal_content"
@@ -77,9 +77,13 @@ function Step2({ Close }) {
         </div>
         <div>
           <button
-           disabled={select === "Выбрать"}
-           className={select !== "Выбрать" ? "delivery_method_button delivery_method_button_active" : "delivery_method_button"}
-           onClick={handleStep3}
+            disabled={select === "Выбрать"}
+            className={
+              select !== "Выбрать"
+                ? "delivery_method_button delivery_method_button_active"
+                : "delivery_method_button"
+            }
+            onClick={handleStep3}
           >
             Далее
           </button>

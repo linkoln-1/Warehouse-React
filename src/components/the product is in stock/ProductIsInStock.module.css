@@ -87,6 +87,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 0 20px 0;
+  border-bottom: 1px solid #a5a5a5;
 }
 .ArtikulProduct {
   width: 74px;
@@ -124,18 +125,21 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+
 }
 .InStockProducts p {
   margin-left: 10px;
 }
 .InStockProducts:hover {
   background-color: #c7c7c7;
-
 }
 .inWarehouseProduct {
   width: 100px;
   font-size: 14px;
   padding-top: 5px;
+}
+.inWarehouseProduct p {
+  padding-top: 11px;
 }
 .ModalStock {
   width: 360px;
@@ -145,7 +149,7 @@
   background-color: white;
   border-radius: 3px;
   padding: 10px;
-  border: 1px solid #CED4DA;
+  border: 1px solid #ced4da;
 }
 .ModalStockInWarehouse {
   margin: 10px 0 10px 10px;
@@ -159,4 +163,33 @@
   display: flex;
   justify-content: space-between;
   margin: 20px 0 10px 10px;
+}
+.ButtonModal {
+  width: 256px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.ButtonCancel {
+  width: 110px;
+  border: 2px solid #17a2b8;
+  background-color: #fff;
+  color: #17a2b8;
+  padding: 10px 20px 10px 20px;
+}
+.ButtonSave {
+  width: 110px;
+  border: 2px solid #17a2b8;
+  background-color: #17a2b8;
+  color: white;
+}
+.AllProduct a {
+  text-decoration: none;
+  color: #6c757d;
+}
+.AllProduct a.Active .CountActive_1 {
+  color: #17a2b8;
+}
+.AllProduct a.Active .CountActive_2 {
+  color: black;
 }

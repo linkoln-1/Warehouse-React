@@ -7,18 +7,24 @@ body {
   box-sizing: border-box;
 }
 a {
-  text-decoration: none;
-  color: #6c757d;
-}
-a.Active .CountActive_1 {
-  color: #17a2b8;
-}
-a.Active .CountActive_2 {
   color: black;
 }
-.page-link {
-  color: black;
-}
-.page-link:hover {
+a:hover{
   color: #17a2b8;
+}
+.active a {
+  color: #6C757D;
+}
+.pagination {
+  width: 545px;
+  margin: 30px auto;
+}
+.pagination li {
+  padding: 0 10px 0 10px;
+}
+.pagination li .btnPrev {
+  margin-right: 25px;
+}
+.pagination li .btnNext {
+  margin-left: 25px;
 }

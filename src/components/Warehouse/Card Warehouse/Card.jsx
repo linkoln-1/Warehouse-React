@@ -6,14 +6,14 @@ import ClockImage from "../../../images/clock-circular-outline 1.png";
 import calendarImage from "../../../images/calendar 1.png";
 
 function Card(props) {
-  const product = props.product.map((item) => String(item.totalCount));
+  const total = props.total.productsItemCount;
   return (
     <div>
       <div className={styles.CardWarhouse}>
         <div className={styles.WarhouseKazanText}>
           <p>{props.item.data.warehouseName}</p>
           <div>
-            <img style={{marginRight:16}} src={redactingImage} alt="" />
+            <img style={{ marginRight: 16 }} src={redactingImage} alt="" />
           </div>
         </div>
         <div className="border-bottom">
@@ -56,13 +56,10 @@ function Card(props) {
             <div style={{ color: "#A5A5A5" }}>Отправлений сегодня</div>
           </div>
 
-          <NavLink
-            className={styles.productsinstock}
-            to="/ProductIsInStock"
-          >
+          <NavLink className={styles.productsinstock} to="/ProductIsInStock">
             <div>
               <span style={{ fontSize: 30, color: "#17A2B8", fontWeight: 500 }}>
-                {product}
+                {total}
               </span>
               <div style={{ color: "#A5A5A5" }}>Товаров в наличии</div>
             </div>
@@ -75,25 +72,34 @@ function Card(props) {
             </span>
           </div>
           <div>
-            <span style={{ fontSize: 19, color: "#A5A5A5", fontWeight: 500, marginRight:20 }}>
+            <span
+              style={{
+                fontSize: 19,
+                color: "#A5A5A5",
+                fontWeight: 500,
+                marginRight: 20,
+              }}
+            >
               Добавить
             </span>
           </div>
         </div>
 
         <div className={styles.AddMethods}>
-            <div style={{ marginLeft: 20 }}>
+          <div style={{ marginLeft: 20 }}>
             <span style={{ fontSize: 19, fontWeight: 400 }}>
               Самостоятельно, Казань
             </span>
-            </div>
+          </div>
 
-            <div style={{ marginRight: 145 }}>
-              <span style={{ color: "#17A2B8", marginLeft:10 }}>245 заказов</span>
-            </div>
+          <div style={{ marginRight: 145 }}>
+            <span style={{ color: "#17A2B8", marginLeft: 10 }}>
+              245 заказов
+            </span>
+          </div>
 
           <div>
-            <img style={{marginRight:12}} src={redactingImage} alt="" />
+            <img style={{ marginRight: 12 }} src={redactingImage} alt="" />
           </div>
         </div>
       </div>
