@@ -15,10 +15,10 @@ function App() {
     <div className={styles.App}>
       <Menu />
       <Switch>
-        <Route exact path="/warehouse">
+        <Route path="/warehouse">
           <Warehouse />
         </Route>
-        <Route path="/warehouse/ProductIsInStock">
+        <Route exact path="/ProductIsInStock">
           <ProductIsInStock />
         </Route>
       </Switch>

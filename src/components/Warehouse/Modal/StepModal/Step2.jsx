@@ -4,15 +4,17 @@ import ReformatDate from "./ReformateDate";
 
 function Step2({ Close }) {
   const [select, setSelect] = useState("Выбрать");
-  const option = ["Другой адрес"];
-  console.log(select);
+  const option = ["до 01:00", "до 02:00", "до 03:00"];
 
   const history = useHistory();
 
   const handleBack = () => {
-    history.push("/warehouse/addWarehouse/step1");
+    history.push("/warehouse/add_warehouse/step1");
   };
 
+  const handleStep3 = () => {
+    history.push("/warehouse/add_warehouse/step3");
+  }
   return (
     <div
       className="modal_content"
@@ -75,8 +77,9 @@ function Step2({ Close }) {
         </div>
         <div>
           <button
-            className="delivery_method_button"
-            disabled={select === "выбрать"}
+           disabled={select === "Выбрать"}
+           className={select !== "Выбрать" ? "delivery_method_button delivery_method_button_active" : "delivery_method_button"}
+           onClick={handleStep3}
           >
             Далее
           </button>

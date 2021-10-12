@@ -58,7 +58,7 @@ function Card(props) {
 
           <NavLink
             className={styles.productsinstock}
-            to="/warehouse/ProductIsInStock"
+            to="/ProductIsInStock"
           >
             <div>
               <span style={{ fontSize: 30, color: "#17A2B8", fontWeight: 500 }}>

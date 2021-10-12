@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 function ModalButtons({ handleSelect }) {
   const history = useHistory();
   const handleClick = () => {
-    history.push("/warehouse/addWarehouse/step1");
+    history.push("/warehouse/add_warehouse/step1");
   };
 
   return (

@@ -10,7 +10,6 @@ function ModalContent(props) {
  const history = useHistory();
  const [selected, setSelected] = useState("Выбрать");
  const options = ["Другой адрес"];
- console.log(selected)
  const handleClose = () => {
   history.push("/warehouse")
  }

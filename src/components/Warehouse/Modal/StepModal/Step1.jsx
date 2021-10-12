@@ -22,7 +22,7 @@ function Step1({ Close }) {
     setMethodWasSelect(false);
   };
   const handleStep2 = () => {
-    history.push("/warehouse/addWarehouse/step2");
+    history.push("/warehouse/add_warehouse/step2");
   };
 
   return (

@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Card from "./Card";
 import { WarehouseCardInfo, WarehouseProduct } from "../../../redux/actions";
+import Modal from "../Modal/index";
+import {Route} from "react-router-dom";
 
 function CardWarehouse(props) {
   const dispatch = useDispatch();
@@ -26,6 +28,9 @@ function CardWarehouse(props) {
           })}
         </div>
       )}
+      <Route path={"/warehouse/add_warehouse"}>
+        <Modal />
+      </Route>
     </div>
   );
 }

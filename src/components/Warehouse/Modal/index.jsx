@@ -1,11 +1,11 @@
 import React from "react";
-import {Route, Switch, useHistory} from "react-router-dom";
+import {Route, useHistory} from "react-router-dom";
 import ModalContent from "./ModalContent";
 import Step1 from "./StepModal/Step1";
 import Step2 from "./StepModal/Step2";
 import Step3 from "./StepModal/Step3";
 
-function RightModal(props) {
+function Modal(props) {
  const history = useHistory();
 
  const handleClick = () => {
@@ -13,7 +13,7 @@ function RightModal(props) {
  };
 
  return (
-   <div className="modalRight" onClick={handleClick}>
+   <div className="modal" onClick={handleClick}>
      <Route exact path={"/warehouse/add_warehouse"}>
       <ModalContent />
      </Route>
@@ -32,4 +32,4 @@ function RightModal(props) {
  );
 }
 
-export default RightModal;
+export default Modal;

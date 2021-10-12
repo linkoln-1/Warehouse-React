@@ -11,8 +11,9 @@ function ReformatDate({ selected, setSelected, options }) {
       </div>
       {isActive && (
         <div className="dropdown-content">
-          {options.map((option) => (
+          {options.map((option,index) => (
             <div
+              key={index}
               onClick={() => {
                 setSelected(option);
                 setIsActive(false);

@@ -1,6 +1,5 @@
 import React from "react";
-import { Route, useHistory } from "react-router-dom";
-import RightModal from "./Modal";
+import { useHistory } from "react-router-dom";
 
 function AddWarehouseButton(props) {
  const history = useHistory();
@@ -14,10 +13,6 @@ function AddWarehouseButton(props) {
     <button className="AddWarehouseButton" onClick={handleclick}>
      + добавить склад
     </button>
-
-    <Route path={"/warehouse/add_warehouse"}>
-     <RightModal />
-    </Route>
    </div>
  );
 }
