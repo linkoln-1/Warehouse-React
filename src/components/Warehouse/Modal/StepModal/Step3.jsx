@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import polygon2 from "../../../../images/Polygon 2.svg";
 
 function Step3({ Close }) {
-  const [minDays, setMinDays] = useState(0);
-  const [maxDays, setMaxDays] = useState(0);
-
-  const handleMinus = () => {
-    setMinDays(minDays - 1);
-  };
-  const handlePlus = () => {
-    setMinDays(minDays + 1);
-  };
+  // const [minDays, setMinDays] = useState(0);
+  // // const [maxDays, setMaxDays] = useState(0);
+  //
+  // const handleMinus = () => {
+  //   setMinDays(minDays - 1);
+  // };
+  // const handlePlus = () => {
+  //   setMinDays(minDays + 1);
+  // };
 
   return (
     <div
@@ -119,91 +119,91 @@ function Step3({ Close }) {
                 </div>
               </div>
             </div>
-            <div className="Count_Days_Delivery">
-              <div className="Count_Min_Days">
-                <div className="Federal_okr">
-                  <div className="minus" onClick={handleMinus}>
-                    <span>-</span>
-                  </div>
+            {/*<div className="Count_Days_Delivery">*/}
+            {/*  <div className="Count_Min_Days">*/}
+            {/*    <div className="Federal_okr">*/}
+            {/*      <div className="minus" onClick={handleMinus}>*/}
+            {/*        <span>-</span>*/}
+            {/*      </div>*/}
 
-                  <div className="count_Total">
-                    <span>{minDays}</span>
-                  </div>
+            {/*      <div className="count_Total">*/}
+            {/*        <span>{minDays}</span>*/}
+            {/*      </div>*/}
 
-                  <div className="plus" onClick={handlePlus}>
-                    <span>+</span>
-                  </div>
-                </div>
+            {/*      <div className="plus" onClick={handlePlus}>*/}
+            {/*        <span>+</span>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
 
-                <div className="Federal_okr">
-                  <div className="minus" onClick={handleMinus}>
-                    <span>-</span>
-                  </div>
+            {/*    <div className="Federal_okr">*/}
+            {/*      <div className="minus" onClick={handleMinus}>*/}
+            {/*        <span>-</span>*/}
+            {/*      </div>*/}
 
-                  <div className="count_Total">
-                    <span>{minDays}</span>
-                  </div>
+            {/*      <div className="count_Total">*/}
+            {/*        <span>{minDays}</span>*/}
+            {/*      </div>*/}
 
-                  <div className="plus" onClick={handlePlus}>
-                    <span>+</span>
-                  </div>
-                </div>
+            {/*      <div className="plus" onClick={handlePlus}>*/}
+            {/*        <span>+</span>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
 
-                <div className="Federal_okr">
-                  <div className="minus" onClick={handleMinus}>
-                    <span>-</span>
-                  </div>
+            {/*    <div className="Federal_okr">*/}
+            {/*      <div className="minus" onClick={handleMinus}>*/}
+            {/*        <span>-</span>*/}
+            {/*      </div>*/}
 
-                  <div className="count_Total">
-                    <span>{minDays}</span>
-                  </div>
+            {/*      <div className="count_Total">*/}
+            {/*        <span>{minDays}</span>*/}
+            {/*      </div>*/}
 
-                  <div className="plus" onClick={handlePlus}>
-                    <span>+</span>
-                  </div>
-                </div>
-                <div className="Federal_okr">
-                  <div className="minus" onClick={handleMinus}>
-                    <span>-</span>
-                  </div>
+            {/*      <div className="plus" onClick={handlePlus}>*/}
+            {/*        <span>+</span>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*    <div className="Federal_okr">*/}
+            {/*      <div className="minus" onClick={handleMinus}>*/}
+            {/*        <span>-</span>*/}
+            {/*      </div>*/}
 
-                  <div className="count_Total">
-                    <span>{minDays}</span>
-                  </div>
+            {/*      <div className="count_Total">*/}
+            {/*        <span>{minDays}</span>*/}
+            {/*      </div>*/}
 
-                  <div className="plus" onClick={handlePlus}>
-                    <span>+</span>
-                  </div>
-                </div>
-                <div className="Federal_okr">
-                  <div className="minus" onClick={handleMinus}>
-                    <span>-</span>
-                  </div>
+            {/*      <div className="plus" onClick={handlePlus}>*/}
+            {/*        <span>+</span>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*    <div className="Federal_okr">*/}
+            {/*      <div className="minus" onClick={handleMinus}>*/}
+            {/*        <span>-</span>*/}
+            {/*      </div>*/}
 
-                  <div className="count_Total">
-                    <span>{minDays}</span>
-                  </div>
+            {/*      <div className="count_Total">*/}
+            {/*        <span>{minDays}</span>*/}
+            {/*      </div>*/}
 
-                  <div className="plus" onClick={handlePlus}>
-                    <span>+</span>
-                  </div>
-                </div>
+            {/*      <div className="plus" onClick={handlePlus}>*/}
+            {/*        <span>+</span>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
 
-                <div className="Federal_okr">
-                  <div className="minus" onClick={handleMinus}>
-                    <span>-</span>
-                  </div>
+            {/*    <div className="Federal_okr">*/}
+            {/*      <div className="minus" onClick={handleMinus}>*/}
+            {/*        <span>-</span>*/}
+            {/*      </div>*/}
 
-                  <div className="count_Total">
-                    <span>{minDays}</span>
-                  </div>
+            {/*      <div className="count_Total">*/}
+            {/*        <span>{minDays}</span>*/}
+            {/*      </div>*/}
 
-                  <div className="plus" onClick={handlePlus}>
-                    <span>+</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/*      <div className="plus" onClick={handlePlus}>*/}
+            {/*        <span>+</span>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
 
             <div className="Count_delivery_Max_Day">
               <div className="Count_Max_Days">
@@ -212,9 +212,9 @@ function Step3({ Close }) {
                     <span>-</span>
                   </div>
 
-                  <div className="count_Total">
-                    <span>{maxDays}</span>
-                  </div>
+                  {/*<div className="count_Total">*/}
+                  {/*  <span>{maxDays}</span>*/}
+                  {/*</div>*/}
 
                   <div className="plus">
                     <span>+</span>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { WarehouseProduct } from "../../redux/actions";
+import {WarehouseProduct} from "../../redux/actions";
 import Products from "./Products";
 
 function InStockProduct(props) {

@@ -7,6 +7,14 @@ import calendarImage from "../../../images/calendar 1.png";
 
 function Card(props) {
   const total = props.total.productsItemCount;
+  let mins = props.item.data.slaCutIn;
+  let getTimeFromMins = () => {
+    let hours = Math.trunc(mins/60);
+    return hours + 'ч';
+  };
+
+
+
   return (
     <div>
       <div className={styles.CardWarhouse}>
@@ -28,7 +36,7 @@ function Card(props) {
         <div className={styles.Workhourse}>
           <div>
             <img src={ClockImage} alt="" />
-            <span>{props.item.data.slaCutIn} минут</span>
+            <span>{getTimeFromMins()} на сборку</span>
           </div>
           <div>
             <img src={calendarImage} alt="" />
