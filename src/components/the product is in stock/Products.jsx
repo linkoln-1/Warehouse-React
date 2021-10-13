@@ -11,12 +11,14 @@ class Product extends React.Component {
       currentPage: 1,
       productPerPage: 10,
       isActive: true,
-      upperPageBound: 5 ,
+      upperPageBound: 5,
       lowerPageBound: 0,
       isPrevBtnActive: "disabled",
       isNextBtnActive: "",
       pageBound: 3,
       currentInStock: "",
+      warehouseExternalId:"",
+      offerId:""
     };
     this.handleClick = this.handleClick.bind(this);
     this.btnDecrementClick = this.btnDecrementClick.bind(this);
@@ -28,12 +30,25 @@ class Product extends React.Component {
   }
 
   //доработка идет, коммент для меня
-  handleAdd(product) {
+  handleAdd(product, warehouseExternalId, offerId) {
     this.setState({
       isActive: !this.state.isActive,
       currentInStock: product,
+      warehouseExternalId:warehouseExternalId,
+      offerId:offerId
     });
   }
+
+
+  //Идет проверка на работоспособность
+  handleSelectProductsPerPage = (e) => {
+    const selectedIndex = e.target.options.selectedIndex;
+
+    this.setState({
+      productPerPage: e.target.options[selectedIndex].value
+    });
+  };
+
 
   handleOnchange = (e) => {
     this.setState({
@@ -129,6 +144,8 @@ class Product extends React.Component {
       lowerPageBound,
       isPrevBtnActive,
       isNextBtnActive,
+      offerId,
+      warehouseExternalId
     } = this.state;
     // Logic for displaying current todos
     const indexOfLastTodo = currentPage * productPerPage;
@@ -237,7 +254,7 @@ class Product extends React.Component {
               <div className={styles.PriceProduct}>{product.price}₽</div>
               <div
                 className={styles.InStockProducts}
-                onClick={() => this.handleAdd(product.currentStock)}
+                onClick={() => this.handleAdd(product.currentStock, product.offerId,product.warehouseExternalId)}
               >
                 <p> {product.currentStock}</p>
               </div>
@@ -252,19 +269,36 @@ class Product extends React.Component {
         ) : (
           <Redactive
             currentStock={currentInStock}
+            offerId={offerId}
+            warehouseExternalId={warehouseExternalId}
             handle={this.handleOnchange}
           />
         )}
-        <div>
-          <p>кол-во строк</p>
+        <div className="footer-with-pagination">
+          <div>
+            Кол-во строк:
+            <select
+              className='select_productsPerPage'
+              onChange={this.handleSelectProductsPerPage}
+              value={this.state.productPerPage}
+            >
+              <option value={10}>10</option>
+              <option value={20}>20</option>
+              <option value={30}>30</option>
+            </select>
+          </div>
+          <ul id="page-numbers" className="pagination">
+            {renderPrevBtn}
+            {/*{pageDecrementBtn}*/}
+            {renderPageNumbers}
+            {pageIncrementBtn}
+            {renderNextBtn}
+          </ul>
+          <div>
+            {this.state.productPerPage * (this.state.currentPage - 1)}-
+            {this.state.productPerPage * this.state.currentPage} из {this.state.product.length}
+          </div>
         </div>
-        <ul id="page-numbers" className="pagination">
-          {renderPrevBtn}
-          {pageDecrementBtn}
-          {renderPageNumbers}
-          {pageIncrementBtn}
-          {renderNextBtn}
-        </ul>
       </div>
     );
   }

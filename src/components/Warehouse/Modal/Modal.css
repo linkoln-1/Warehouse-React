@@ -219,3 +219,41 @@
 .plus span {
   color: #a5a5a5;
 }
+
+
+/*//////////////////////////////////////////////////////////////////*/
+
+.footer-with-pagination {
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  justify-content: space-between;
+}
+.select_productsPerPage {
+  padding: 11px 9px;
+  border: 1.5px solid gainsboro;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.pagination {
+  width: 530px;
+}
+.pagination li {
+  padding: 0 10px 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

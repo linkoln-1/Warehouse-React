@@ -5,9 +5,10 @@ import { SaveCurrentInStock } from "../../redux/actions";
 
 function Readctive(props) {
   let current = props.currentStock;
+
   const dispatch = useDispatch();
   const handleSave = () => {
-    dispatch(SaveCurrentInStock(current));
+    dispatch(SaveCurrentInStock(props.currentStock, props.offerId, props.warehouseExternalId));
   };
 
   return (

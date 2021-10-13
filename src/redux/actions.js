@@ -52,12 +52,22 @@ export const WarehouseProduct = (id) => {
   };
 };
 
-export const SaveCurrentInStock = (current) => {
+export const SaveCurrentInStock = (current, offerId, warehouseExternalId) => {
   return (dispatch) => {
     dispatch({
       type: "save/load/start",
     });
-    fetch(`http://212.193.50.181:8080/api/warehouse/manage/products/remains`)
+    fetch(`http://212.193.50.181:8080/api/warehouse/manage/products/remains`, {
+      method:"POST",
+      body: JSON.stringify({
+        offerId:offerId,
+        stockCount:current,
+        warehouseExternalId:warehouseExternalId
+      }),
+      headers: {
+        'Content-type': 'application/json',
+      },
+    })
       .then((response) => response.json())
       .then((data) => {
         dispatch({
