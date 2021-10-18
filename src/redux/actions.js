@@ -52,6 +52,7 @@ export const WarehouseProduct = (id) => {
   };
 };
 
+//Доработка нужна
 export const SaveCurrentInStock = (current, offerId, warehouseExternalId) => {
   return (dispatch) => {
     dispatch({
@@ -62,9 +63,10 @@ export const SaveCurrentInStock = (current, offerId, warehouseExternalId) => {
       body: JSON.stringify({
         "stocks": [
           {
-            "offerId": offerId,
-            "stockCount": current,
-            "warehouseExternalId": warehouseExternalId
+            offerId: offerId,
+            productId:35555,
+            stockCount: current,
+            warehouseExternalId: warehouseExternalId
           }
           ]
       }),
@@ -81,5 +83,4 @@ export const SaveCurrentInStock = (current, offerId, warehouseExternalId) => {
       });
   };
 };
-
 

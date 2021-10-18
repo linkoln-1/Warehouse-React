@@ -1,17 +1,9 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import {WarehouseProduct} from "../../redux/actions";
+import React  from "react";
+import { useSelector } from "react-redux";
 import Products from "./Products";
 
 function InStockProduct(props) {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(WarehouseProduct(props.item.warehouseExternalId));
-  }, [props.item.warehouseExternalId, dispatch]);
-
-  const products = useSelector(
-    (state) => state.WarehouseProduct.WarehouseProduct
-  );
+  const products = useSelector((state) => state.WarehouseProduct.WarehouseProduct);
   const loading = useSelector((state) => state.WarehouseProduct.loading);
 
   return (

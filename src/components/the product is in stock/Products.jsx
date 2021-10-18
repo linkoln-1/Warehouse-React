@@ -30,7 +30,7 @@ class Product extends React.Component {
   }
 
   //доработка идет, коммент для меня
-  handleAdd(product, warehouseExternalId, offerId) {
+  handleAdd(product,offerId, warehouseExternalId) {
     this.setState({
       isActive: !this.state.isActive,
       currentInStock: product,
@@ -245,25 +245,25 @@ class Product extends React.Component {
     return (
       <div>
         {currentProduct.map((product, index) => {
-          return (
-            <div className={styles.InStockProduct} key={index}>
-              <div className={styles.ArtikulProduct}>{product.offerId}</div>
-              <div className={styles.PhotosProduct}>Фото</div>
-              <div className={styles.BarcodeProduct}>{product.barcode}</div>
-              <div className={styles.NameProduct}>{product.name}</div>
-              <div className={styles.PriceProduct}>{product.price}₽</div>
-              <div
-                className={styles.InStockProducts}
-                onClick={() => this.handleAdd(product.currentStock, product.offerId,product.warehouseExternalId)}
-              >
-                <p> {product.currentStock}</p>
+            return (
+              <div className={styles.InStockProduct} key={index}>
+                <div className={styles.ArtikulProduct}>{product.offerId}</div>
+                <div className={styles.PhotosProduct}>Фото</div>
+                <div className={styles.BarcodeProduct}>{product.barcode}</div>
+                <div className={styles.NameProduct}>{product.name}</div>
+                <div className={styles.PriceProduct}>{product.price}₽</div>
+                <div
+                  className={styles.InStockProducts}
+                  onClick={() => this.handleAdd(product.currentStock, product.offerId,product.warehouseExternalId)}
+                >
+                  <p> {product.currentStock}</p>
+                </div>
+                <div className={styles.inWarehouseProduct}>
+                  <p>{product.currentStockOnWarehouse}</p>
+                </div>
               </div>
-              <div className={styles.inWarehouseProduct}>
-                <p>{product.currentStockOnWarehouse}</p>
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
         {this.state.isActive ? (
           ""
         ) : (

@@ -6,8 +6,9 @@ import ClockImage from "../../../images/clock-circular-outline 1.png";
 import calendarImage from "../../../images/calendar 1.png";
 
 function Card(props) {
-  const total = props.total.productsItemCount;
-  let mins = props.item.data.slaCutIn;
+
+  const total = props.total;
+  let mins = props.card.data.slaCutIn;
   let getTimeFromMins = () => {
     let hours = Math.trunc(mins/60);
     return hours + 'ч';
@@ -17,19 +18,19 @@ function Card(props) {
 
   return (
     <div>
-      <div className={styles.CardWarhouse}>
+      <div className={styles.CardWarhouse} >
         <div className={styles.WarhouseKazanText}>
-          <p>{props.item.data.warehouseName}</p>
+          <p>{props.card.data.warehouseName}</p>
           <div>
             <img style={{ marginRight: 16 }} src={redactingImage} alt="" />
           </div>
         </div>
         <div className="border-bottom">
           <p style={{ color: "#17A2B8" }}>
-            {props.item.data.address.zipcode}, {props.item.data.address.country}
-            ,{props.item.data.address.region},{props.item.data.address.city},{" "}
-            {props.item.data.address.street} {props.item.data.address.house},{" "}
-            {props.item.data.address.building}
+            {props.card.data.address.zipcode}, {props.card.data.address.country}
+            ,{props.card.data.address.region},{props.card.data.address.city},{" "}
+            {props.card.data.address.street} {props.card.data.address.house},{" "}
+            {props.card.data.address.building}
           </p>
         </div>
 

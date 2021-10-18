@@ -3,12 +3,12 @@ import styles from "./ProductIsInStock.module.css";
 import { useDispatch } from "react-redux";
 import { SaveCurrentInStock } from "../../redux/actions";
 
-function Readctive(props) {
-  let current = props.currentStock;
+function Readctive({currentStock, offerId, warehouseExternalId, handle}) {
+  let current = currentStock;
 
   const dispatch = useDispatch();
   const handleSave = () => {
-    dispatch(SaveCurrentInStock(props.currentStock, props.offerId, props.warehouseExternalId));
+    dispatch(SaveCurrentInStock(currentStock, offerId, warehouseExternalId));
   };
 
   return (
@@ -20,7 +20,7 @@ function Readctive(props) {
         <span style={{ fontSize: 14, fontWeight: 500 }}>Доступно:</span>
         <input
           value={current}
-          onChange={props.handle}
+          onChange={handle}
           className="form-control"
           type="text"
         />

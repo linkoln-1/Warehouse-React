@@ -2,15 +2,32 @@ import Menu from "../Left Menu";
 import styles from "./App.module.css";
 import { Route, Switch } from "react-router-dom";
 import Warehouse from "../Warehouse";
-import { useDispatch } from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import { useEffect } from "react";
-import { warehouseInfo } from "../../redux/actions";
+import { WarehouseCardInfo, warehouseInfo, WarehouseProduct} from "../../redux/actions";
 import ProductIsInStock from "../the product is in stock";
 function App() {
+  const info = useSelector((state) => state.warehouseInfo.WarehouseInfo.data);
+  const id = info?.map(item => item.warehouseExternalId)[12]
+  console.log(id)
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(warehouseInfo());
-  }, [dispatch]);
+  }, []);
+
+useEffect(() => {
+  if (info !== undefined) {
+    dispatch(WarehouseCardInfo(id));
+  }
+},[info])
+
+  useEffect(() => {
+    if (info !== undefined) {
+      dispatch(WarehouseProduct(id));
+    }
+  }, [info])
+
+
   return (
     <div className={styles.App}>
       <Menu />

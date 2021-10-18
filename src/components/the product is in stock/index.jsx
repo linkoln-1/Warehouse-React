@@ -6,11 +6,8 @@ import NavigationProductIsInStock from "./NavigationProductIsInStock";
 import ProductIsInStockSearch from "./ProductIsInStockSearch";
 import ProductIsInStockMainContent from "./ProductIsInStockMainContent";
 import InStockProduct from "./InStockProduct";
-import { useSelector } from "react-redux";
 
 function ProductIsInStock(props) {
-  const info = useSelector((state) => state.warehouseInfo.WarehouseInfo.data);
-
   return (
     <div className={styles.ProductIsInStock}>
       <HeaderProductIsInStock />
@@ -18,15 +15,7 @@ function ProductIsInStock(props) {
       <NavigationProductIsInStock />
       <ProductIsInStockSearch />
       <ProductIsInStockMainContent />
-      {info === undefined ? (
-        "loading false"
-      ) : (
-        <div>
-          {info.map((item, index) => {
-            return <InStockProduct item={item} key={index} />;
-          })}
-        </div>
-      )}
+      <InStockProduct />
     </div>
   );
 }

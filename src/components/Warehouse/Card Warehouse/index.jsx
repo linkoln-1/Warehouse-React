@@ -1,31 +1,22 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React  from "react";
 import Card from "./Card";
-import { WarehouseCardInfo, WarehouseProduct } from "../../../redux/actions";
 import Modal from "../Modal/index";
 import { Route } from "react-router-dom";
+import {useSelector} from "react-redux";
 
-function CardWarehouse(props) {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(WarehouseCardInfo(props.item.warehouseExternalId));
-    dispatch(WarehouseProduct(props.item.warehouseExternalId));
-  }, [props.item.warehouseExternalId, dispatch]);
-  const CardInfo = useSelector((state) => state.CardInfo.CardInfo);
-  const products = useSelector(
-    (state) => state.WarehouseProduct.WarehouseProduct
-  );
-  const i = products.map((item) => item.data);
-
+function CardWarehouse() {
+ const CardInfo = useSelector((state) => state.CardInfo.CardInfo);
+ const products = useSelector((state) => state.WarehouseProduct.WarehouseProduct);
+ const product = products?.map((item) => item.data.totalCount);
   return (
     <div>
       {CardInfo === undefined ? (
         "соединение с сервером"
       ) : (
         <div>
-          {CardInfo.map((item, index) => {
+          {CardInfo.map((card, index) => {
             return (
-              <Card item={item} key={index} product={i} total={props.item} />
+              <Card card={card} key={index}  total={product}/>
             );
           })}
         </div>
