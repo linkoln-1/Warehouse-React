@@ -143,13 +143,18 @@
 }
 .ModalStock {
   width: 360px;
-  position: fixed;
-  bottom: 180px;
-  right: 200px;
   background-color: white;
   border-radius: 3px;
   padding: 10px;
   border: 1px solid #ced4da;
+}
+.RelativeModalItem {
+  position: relative;
+}
+.AbsoluteModal {
+  position: absolute;
+  bottom: -183px;
+  right: 95px;
 }
 .ModalStockInWarehouse {
   margin: 10px 0 10px 10px;

@@ -9,7 +9,6 @@ import ProductIsInStock from "../the product is in stock";
 function App() {
   const info = useSelector((state) => state.warehouseInfo.WarehouseInfo.data);
   const id = info?.map(item => item.warehouseExternalId)[12]
-  console.log(id)
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(warehouseInfo());

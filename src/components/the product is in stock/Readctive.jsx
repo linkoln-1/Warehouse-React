@@ -1,14 +1,20 @@
 import React from "react";
 import styles from "./ProductIsInStock.module.css";
-import { useDispatch } from "react-redux";
-import { SaveCurrentInStock } from "../../redux/actions";
+import {useDispatch, useSelector} from "react-redux";
+import {SaveCurrentInStock, WarehouseProduct} from "../../redux/actions";
 
 function Readctive({currentStock, offerId, warehouseExternalId, handle}) {
-  let current = currentStock;
 
+  let current = currentStock;
   const dispatch = useDispatch();
+ const info = useSelector((state) => state.warehouseInfo.WarehouseInfo.data);
+ const id = info?.map(item => item.warehouseExternalId)[12]
+
   const handleSave = () => {
     dispatch(SaveCurrentInStock(currentStock, offerId, warehouseExternalId));
+   if (info !== undefined) {
+    dispatch(WarehouseProduct(id));
+   }
   };
 
   return (
