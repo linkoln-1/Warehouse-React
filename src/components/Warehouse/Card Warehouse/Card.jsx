@@ -6,19 +6,16 @@ import ClockImage from "../../../images/clock-circular-outline 1.png";
 import calendarImage from "../../../images/calendar 1.png";
 
 function Card(props) {
-
   const total = props.total;
   let mins = props.card.data.slaCutIn;
   let getTimeFromMins = () => {
-    let hours = Math.trunc(mins/60);
-    return hours + 'ч';
+    let hours = Math.trunc(mins / 60);
+    return hours + "ч";
   };
-
-
 
   return (
     <div>
-      <div className={styles.CardWarhouse} >
+      <div className={styles.CardWarhouse}>
         <div className={styles.WarhouseKazanText}>
           <p>{props.card.data.warehouseName}</p>
           <div>

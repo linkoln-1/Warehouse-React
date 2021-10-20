@@ -53,50 +53,55 @@
   padding-top: 20px;
   margin-left: 20px;
 }
-.KleineMenu {
+
+/*================Menu*/
+ul{
+  padding: 0;
+  margin: 0;
   margin-left: 36px;
-}
-.KleineMenu p {
-  color: white;
+  color: #DBDDDF;
+  list-style-type: none;
   font-size: 18px;
 }
-.KleineMenu .Sklad {
-  margin: 0;
+li{
+  padding: 11px 0;
+  cursor: pointer;
+  max-width: 210px;
 }
-.KleineMenu p:hover {
-  color: #6c757d;
+li:hover {
+  color: #a4a3a3;
 }
-a {
+li a{
   text-decoration: none;
-  color: white;
-  font-size: 18px;
-}
-a.Selected .Sklad p {
-  background-color: white;
-  color: #2a3844;
-  padding: 10px 0 10px 11px;
-  margin-left: -15px;
-  border-radius: 3px;
-}
-.Sklad p {
+  color: #DBDDDF;
+  padding: 0;
   margin: 0;
 }
-a.Selected .Sklad {
-  width: 210px;
-}
-.Settings {
-  display: flex;
-  align-items: center;
+
+li img{
   margin-right: 10px;
 }
-.Settings img {
-  width: 19px;
-  height: 19px;
-  margin-right: 7px;
+.Selected{
+  background-color: #DCDEE0;
+  color: #212529;
+  padding: 11px 15px;
+  margin-left: -15px;
+  border-radius: 3px;
+  display: block;
 }
-.Settings p {
-  margin-top: 15px;
+.Selected:hover {
+  color: #212529;
 }
+
+
+
+
+
+
+
+
+
+
 .Footer {
   margin-top: 200px;
   box-shadow: 0 -12px 8px -7px rgba(0, 0, 0, 0.41);

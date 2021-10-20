@@ -1,29 +1,34 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import styles from "./MenuStyle.module.css";
-import settings from "../../images/settings (2) 1.svg"
+import settings from "../../images/settings (2) 1.svg";
 
 function MenuProperties(props) {
+  const history = useHistory();
+  const [active, setActive] = useState(false);
+  const handleClick = () => {
+    history.push("/warehouse");
+    setActive(true);
+  };
   return (
-    <div className={styles.KleineMenu}>
-      <p>Обзор</p>
-      <p>Маркетплейсы</p>
-      <p>Продукты</p>
-      <p>Прайс-лист</p>
-      <p>Отгрузки и склады</p>
-      <p>Заказы</p>
-      <p>Аналитика</p>
-      <NavLink activeClassName={styles.Selected} to="/warehouse">
-        <div className={styles.Sklad}>
-          <p>Склады</p>
+    <ul>
+      <li>Обзор</li>
+      <li>Маркетплейсы</li>
+      <li>Продукты</li>
+      <li>Прайс-лист</li>
+      <li>Отгрузки и склады</li>
+      <li>Заказы</li>
+      <li>Аналитика</li>
+      <li onClick={handleClick} className={active ? styles.Selected : ""}>
+        Склады
+      </li>
+      <li>
+        <div className={styles.Settings}>
+          <img src={settings} alt="" />
+          Настройки
         </div>
-      </NavLink>
-
-      <div className={styles.Settings}>
-        <img src={settings} alt="" />
-        <p>Настройки</p>
-      </div>
-    </div>
+      </li>
+    </ul>
   );
 }
 

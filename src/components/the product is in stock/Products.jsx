@@ -3,8 +3,6 @@ import styles from "./ProductIsInStock.module.css";
 import Redactive from "./Readctive";
 import $ from "jquery";
 
-
-
 class Product extends React.Component {
   constructor(props) {
     super(props);
@@ -19,9 +17,9 @@ class Product extends React.Component {
       isNextBtnActive: "",
       pageBound: 3,
       currentInStock: "",
-      warehouseExternalId:"",
-      offerId:"",
-      id:"",
+      warehouseExternalId: "",
+      offerId: "",
+      id: "",
     };
     this.handleClick = this.handleClick.bind(this);
     this.btnDecrementClick = this.btnDecrementClick.bind(this);
@@ -33,26 +31,24 @@ class Product extends React.Component {
   }
 
   //доработка идет, коммент для меня
-  handleAdd(product,offerId, warehouseExternalId, index) {
+  handleAdd(product, offerId, warehouseExternalId, index) {
     this.setState({
-      isActive:!this.state.isActive,
+      isActive: !this.state.isActive,
       currentInStock: product,
-      warehouseExternalId:warehouseExternalId,
-      offerId:offerId,
-      id:index
+      warehouseExternalId: warehouseExternalId,
+      offerId: offerId,
+      id: index,
     });
   }
-
 
   //Идет проверка на работоспособность
   handleSelectProductsPerPage = (e) => {
     const selectedIndex = e.target.options.selectedIndex;
 
     this.setState({
-      productPerPage: e.target.options[selectedIndex].value
+      productPerPage: e.target.options[selectedIndex].value,
     });
   };
-
 
   handleOnchange = (e) => {
     this.setState({
@@ -137,7 +133,6 @@ class Product extends React.Component {
     this.setPrevAndNextBtnClass(listid);
   }
 
-
   render() {
     const {
       product,
@@ -152,7 +147,6 @@ class Product extends React.Component {
       warehouseExternalId,
       id,
     } = this.state;
-
 
     // Logic for displaying current todos
     const indexOfLastTodo = currentPage * productPerPage;
@@ -235,13 +229,21 @@ class Product extends React.Component {
     if (isNextBtnActive === "disabled") {
       renderNextBtn = (
         <li className={isNextBtnActive}>
-          <span className="btnNext" id="btnNext"> Вперед </span>
+          <span className="btnNext" id="btnNext">
+            {" "}
+            Вперед{" "}
+          </span>
         </li>
       );
     } else {
       renderNextBtn = (
         <li className={isNextBtnActive}>
-          <a href="#" className="btnNext" id="btnNext" onClick={this.btnNextClick}>
+          <a
+            href="#"
+            className="btnNext"
+            id="btnNext"
+            onClick={this.btnNextClick}
+          >
             {" "}
             Вперед{" "}
           </a>
@@ -251,49 +253,55 @@ class Product extends React.Component {
 
     return (
       <div>
-          {currentProduct.map((product, index) => {
-            return (
-              <div className={styles.InStockProduct} key={index}>
-                <div className={styles.ArtikulProduct}>{product.offerId}</div>
-                <div className={styles.PhotosProduct}>Фото</div>
-                <div className={styles.BarcodeProduct}>{product.barcode}</div>
-                <div className={styles.NameProduct}>{product.name}</div>
-                <div className={styles.PriceProduct}>{product.price}₽</div>
+        {currentProduct.map((product, index) => {
+          return (
+            <div className={styles.InStockProduct} key={index}>
+              <div className={styles.ArtikulProduct}>{product.offerId}</div>
+              <div className={styles.PhotosProduct}>Фото</div>
+              <div className={styles.BarcodeProduct}>{product.barcode}</div>
+              <div className={styles.NameProduct}>{product.name}</div>
+              <div className={styles.PriceProduct}>{product.price}₽</div>
 
-                <div className={styles.RelativeModalItem}>
-                  <div
-                    className={styles.InStockProducts}
-                    onClick={() => this.handleAdd(product.currentStock, product.offerId,product.warehouseExternalId, index)}
-                  >
-                    {product.currentStock}
-                  </div>
-
-                  <div className={styles.AbsoluteModal}>
-                    {id === index && this.state.isActive ? (
-                      <Redactive
-                        currentStock={currentInStock}
-                        offerId={offerId}
-                        warehouseExternalId={warehouseExternalId}
-                        handle={this.handleOnchange}
-                      />
-                    ) : (
-                      ""
-                    )}
-                  </div>
+              <div className={styles.RelativeModalItem}>
+                <div
+                  className={styles.InStockProducts}
+                  onClick={() =>
+                    this.handleAdd(
+                      product.currentStock,
+                      product.offerId,
+                      product.warehouseExternalId,
+                      index
+                    )
+                  }
+                >
+                  {product.currentStock}
                 </div>
 
-
-                <div className={styles.inWarehouseProduct}>
-                  {product.currentStockOnWarehouse}
+                <div className={styles.AbsoluteModal}>
+                  {id === index && this.state.isActive ? (
+                    <Redactive
+                      currentStock={currentInStock}
+                      offerId={offerId}
+                      warehouseExternalId={warehouseExternalId}
+                      handle={this.handleOnchange}
+                    />
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
-            );
-          })}
-          <div className="footer-with-pagination">
+
+              <div className={styles.inWarehouseProduct}>
+                {product.currentStockOnWarehouse}
+              </div>
+            </div>
+          );
+        })}
+        <div className="footer-with-pagination">
           <div>
             Кол-во строк:
             <select
-              className='select_productsPerPage'
+              className="select_productsPerPage"
               onChange={this.handleSelectProductsPerPage}
               value={this.state.productPerPage}
             >
@@ -311,9 +319,10 @@ class Product extends React.Component {
               {renderNextBtn}
             </ul>
           </div>
-          <div style={{color:"#6C757D"}}>
+          <div style={{ color: "#6C757D" }}>
             {this.state.productPerPage * (this.state.currentPage - 1)}-
-            {this.state.productPerPage * this.state.currentPage} из {this.state.product.length}
+            {this.state.productPerPage * this.state.currentPage} из{" "}
+            {this.state.product.length}
           </div>
         </div>
       </div>
