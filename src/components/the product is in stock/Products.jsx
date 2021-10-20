@@ -251,7 +251,6 @@ class Product extends React.Component {
 
     return (
       <div>
-        <div className={styles.RelativeModalItem}>
           {currentProduct.map((product, index) => {
             return (
               <div className={styles.InStockProduct} key={index}>
@@ -260,41 +259,37 @@ class Product extends React.Component {
                 <div className={styles.BarcodeProduct}>{product.barcode}</div>
                 <div className={styles.NameProduct}>{product.name}</div>
                 <div className={styles.PriceProduct}>{product.price}₽</div>
-                <div
-                  className={styles.InStockProducts}
-                  onClick={() => this.handleAdd(product.currentStock, product.offerId,product.warehouseExternalId, index)}
-                >
-                  <p> {product.currentStock}</p>
+
+                <div className={styles.RelativeModalItem}>
+                  <div
+                    className={styles.InStockProducts}
+                    onClick={() => this.handleAdd(product.currentStock, product.offerId,product.warehouseExternalId, index)}
+                  >
+                    {product.currentStock}
+                  </div>
+
+                  <div className={styles.AbsoluteModal}>
+                    {id === index && this.state.isActive ? (
+                      <Redactive
+                        currentStock={currentInStock}
+                        offerId={offerId}
+                        warehouseExternalId={warehouseExternalId}
+                        handle={this.handleOnchange}
+                      />
+                    ) : (
+                      ""
+                    )}
+                  </div>
                 </div>
-                <div className={styles.AbsoluteModal}>
-                  {this.state.isActive || id === index ? (
-                    ""
-                  ) : (
-                    <Redactive
-                      currentStock={currentInStock}
-                      offerId={offerId}
-                      warehouseExternalId={warehouseExternalId}
-                      handle={this.handleOnchange}
-                    />
-                  )}
-                </div>
+
 
                 <div className={styles.inWarehouseProduct}>
-                  <p>{product.currentStockOnWarehouse}</p>
+                  {product.currentStockOnWarehouse}
                 </div>
-
-
-
               </div>
             );
           })}
-
-
-
-        </div>
-
-
-        <div className="footer-with-pagination">
+          <div className="footer-with-pagination">
           <div>
             Кол-во строк:
             <select
@@ -307,14 +302,16 @@ class Product extends React.Component {
               <option value={30}>30</option>
             </select>
           </div>
-          <ul id="page-numbers" className="pagination">
-            {renderPrevBtn}
-            {/*{pageDecrementBtn}*/}
-            {renderPageNumbers}
-            {pageIncrementBtn}
-            {renderNextBtn}
-          </ul>
           <div>
+            <ul id="page-numbers" className="pagination">
+              {renderPrevBtn}
+              {/*{pageDecrementBtn}*/}
+              {renderPageNumbers}
+              {pageIncrementBtn}
+              {renderNextBtn}
+            </ul>
+          </div>
+          <div style={{color:"#6C757D"}}>
             {this.state.productPerPage * (this.state.currentPage - 1)}-
             {this.state.productPerPage * this.state.currentPage} из {this.state.product.length}
           </div>

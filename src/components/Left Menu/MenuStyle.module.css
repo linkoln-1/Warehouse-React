@@ -75,7 +75,7 @@ a.Selected .Sklad p {
   background-color: white;
   color: #2a3844;
   padding: 10px 0 10px 11px;
-  margin: 0;
+  margin-left: -15px;
   border-radius: 3px;
 }
 .Sklad p {

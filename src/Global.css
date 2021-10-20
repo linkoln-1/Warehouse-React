@@ -6,11 +6,11 @@ body {
 * {
   box-sizing: border-box;
 }
-a {
-  color: black;
-}
-a:hover{
+.btnNext {
   color: #17a2b8;
+}
+a:hover {
+  color:#000000;
 }
 .active a {
   color: #6C757D;

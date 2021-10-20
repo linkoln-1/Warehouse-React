@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./MenuStyle.module.css";
-import settings from "../../images/settings (2) 1.png";
+import settings from "../../images/settings (2) 1.svg"
 
 function MenuProperties(props) {
   return (

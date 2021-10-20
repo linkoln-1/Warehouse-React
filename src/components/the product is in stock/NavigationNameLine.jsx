@@ -4,7 +4,7 @@ import styles from "./ProductIsInStock.module.css";
 function NavigationNameLine(props) {
   return (
     <div className={styles.NavigationLineProductIsInStock}>
-      <p>Склады/товары на складе</p>
+      <p>Склады<span>/товары на складе</span></p>
     </div>
   );
 }
