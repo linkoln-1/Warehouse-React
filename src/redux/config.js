@@ -5,6 +5,8 @@ import InfoWarehouseReducer from "./Reducers/InfoWarehouseReducer";
 import InfoCard from "./Reducers/CardInfo";
 import ProductWarehouse from "./Reducers/WarehouseProduct";
 import SaveInfo from "./Reducers/SaveReducer";
+import RateCard from "./Reducers/LoadRateCard";
+import AnnualCard from "./Reducers/LoadAnnualCard";
 
 const logger = createLogger({
   diff: true,
@@ -16,6 +18,8 @@ const rootReducer = combineReducers({
   CardInfo: InfoCard,
   WarehouseProduct: ProductWarehouse,
   Save: SaveInfo,
+  LoadRateCard: RateCard,
+  LoadAnnualCard: AnnualCard,
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger));

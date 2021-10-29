@@ -1,0 +1,726 @@
+{
+  "Warehouse": [
+    {
+      "warehouseName": "АОРА ГРУПП",
+      "warehouseExternalId": "22205619606000",
+      "marketplaceKind": 1,
+      "marketplaceDescription": "Ozon",
+      "warehouseId": 1
+    }
+  ],
+  "address": [
+    {
+      "country": "Россия",
+      "region": "Татарстан",
+      "city": "Казань",
+      "street": "Чистопольская",
+      "house": 1,
+      "building": 1,
+      "zipcode": "420000",
+      "workDay": 1,
+      "success": true,
+      "totalCount": 51,
+      "error": null,
+      "WarehouseAddressId": 1,
+      "slaCutIn": 1440
+    }
+  ],
+  "productsList": [
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+5",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 1
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+6",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 965,
+      "currentStockInMyWarehouse": 670,
+      "id": 2
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+9",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 475,
+      "currentStockInMyWarehouse": 876,
+      "id": 3
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+12",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 876,
+      "currentStockInMyWarehouse": 354,
+      "id": 4
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 897,
+      "currentStockInMyWarehouse": 487,
+      "id": 5
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+0",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 764,
+      "currentStockInMyWarehouse": 378,
+      "id": 6
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+9",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 7
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+52",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 8
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+89",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 9
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+76",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 10
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+59",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 11
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+49",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 12
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+29",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 13
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+30",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 14
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+46",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 15
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+18",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 16
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+23",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 17
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+27",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 18
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 19
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 20
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 21
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 22
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 23
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 24
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 25
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 26
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 27
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 28
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 29
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 30
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 31
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 32
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 33
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 130,
+      "id": 34
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 999,
+      "currentStockInMyWarehouse": 300,
+      "id": 35
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 36
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 37
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 38
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 39
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 905,
+      "currentStockInMyWarehouse": 120,
+      "id": 40
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 983,
+      "currentStockInMyWarehouse": 245,
+      "id": 41
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 726,
+      "currentStockInMyWarehouse": 679,
+      "id": 42
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 225,
+      "currentStockInMyWarehouse": 130,
+      "id": 43
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 245,
+      "currentStockInMyWarehouse": 120,
+      "id": 44
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 395,
+      "currentStockInMyWarehouse": 500,
+      "id": 45
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 105,
+      "currentStockInMyWarehouse": 320,
+      "id": 46
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 999,
+      "currentStockInMyWarehouse": 987,
+      "id": 47
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 735,
+      "currentStockInMyWarehouse": 625,
+      "id": 48
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 935,
+      "currentStockInMyWarehouse": 145,
+      "id": 49
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 600,
+      "currentStockInMyWarehouse": 60,
+      "id": 50
+    },
+    {
+      "warehouseExternalId": "22205619606000",
+      "warehouseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "offerId": "LCPDG-400+4",
+      "photo": "",
+      "bareCode": "OZN194008156",
+      "name": "Органайзер для документов А5/ А4/ Папка для документов/ Папка для семейных документов",
+      "price": "2040 ₽",
+      "currentStockOnWarehouse": 999,
+      "currentStockInMyWarehouse": 100,
+      "id": 51
+    }
+  ],
+  "monthly": [
+    {
+      "activity": "Самозанятый",
+      "price": "450 ₽",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Ozon S",
+      "price": "187 €",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Малый бизнес",
+      "price": "900 ₽",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Озон М",
+      "price": "750 €",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Экспортер",
+      "price": "2 900 ₽",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Озон Л",
+      "price": "1 250 €",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Партнер",
+      "price": "9 900 ₽",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Ozon XS",
+      "price": "62 €",
+      "forTime": "за 1 месяц"
+    }
+  ],
+  "annual": [
+    {
+      "activity": "Самозанятый",
+      "price": "4 500 ₽",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Ozon S",
+      "price": "1 870 €",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Малый бизнес",
+      "price": "9 000 ₽",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Озон М",
+      "price": "7 500 €",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Экспортер",
+      "price": "29 000 ₽",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Озон Л",
+      "price": "12 500 €",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Партнер",
+      "price": "99 000 ₽",
+      "forTime": "за 1 месяц"
+    },
+    {
+      "activity": "Ozon XS",
+      "price": "620 €",
+      "forTime": "за 1 месяц"
+    }
+  ]
+}

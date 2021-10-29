@@ -1,29 +1,25 @@
 export const warehouseInfo = () => {
   return (dispatch) => {
     dispatch({
-      type: "WarehouseInfo/load/start",
+      type: "Warehouse/load/start",
     });
-    fetch(
-      `http://212.193.50.181:8080/api/warehouse/manage?includeNonActive=true`
-    )
+    fetch(`http://localhost:8000/Warehouse`)
       .then((res) => res.json())
       .then((json) => {
         dispatch({
-          type: "WarehouseInfo/load/success",
+          type: "Warehouse/load/success",
           payload: json,
         });
       });
   };
 };
 
-export const WarehouseCardInfo = (id) => {
+export const WarehouseCardInfo = () => {
   return (dispatch) => {
     dispatch({
       type: "cardInfo/load/start",
     });
-    fetch(
-      `http://212.193.50.181:8080//api/warehouse/manage/byExternal?externalId=${id}&marketplaceKind=Ozon `
-    )
+    fetch(`http://localhost:8000/address`)
       .then((response) => response.json())
       .then((json) => {
         dispatch({
@@ -34,14 +30,12 @@ export const WarehouseCardInfo = (id) => {
   };
 };
 
-export const WarehouseProduct = (id) => {
+export const WarehouseProduct = () => {
   return (dispatch) => {
     dispatch({
       type: "WarehouseProduct/load/start",
     });
-    fetch(
-      `http://212.193.50.181:8080/api/warehouse/manage/${id}/products?kind=Ozon&page=1&pageSize=200`
-    )
+    fetch(`http://localhost:8000/productsList`)
       .then((response) => response.json())
       .then((data) => {
         dispatch({
@@ -53,22 +47,15 @@ export const WarehouseProduct = (id) => {
 };
 
 //Доработка нужна
-export const SaveCurrentInStock = (current, offerId, warehouseExternalId) => {
+export const SaveCurrentInStock = (currentProduct) => {
   return (dispatch) => {
     dispatch({
       type: "save/load/start",
     });
-    fetch(`http://212.193.50.181:8080/api/warehouse/manage/products/remains`, {
+    fetch(`http://localhost:8000/productsList`, {
       method: "POST",
       body: JSON.stringify({
-        stocks: [
-          {
-            offerId: offerId,
-            productId: 35555,
-            stockCount: current,
-            warehouseExternalId: warehouseExternalId,
-          },
-        ],
+        currentStockInMyWarehouse: currentProduct,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -78,6 +65,36 @@ export const SaveCurrentInStock = (current, offerId, warehouseExternalId) => {
       .then((data) => {
         dispatch({
           type: "save/load/success",
+          payload: data,
+        });
+      });
+  };
+};
+export const LoadRateCard = () => {
+  return (dispatch) => {
+    dispatch({
+      type: "LoadRateCard/load/start",
+    });
+    fetch(`http://localhost:8000/monthly`)
+      .then((response) => response.json())
+      .then((data) => {
+        dispatch({
+          type: "LoadRateCard/load/success",
+          payload: data,
+        });
+      });
+  };
+};
+export const LoadAnnualCard = () => {
+  return (dispatch) => {
+    dispatch({
+      type: "LoadAnnualCard/load/start",
+    });
+    fetch(`http://localhost:8000/annual`)
+      .then((response) => response.json())
+      .then((data) => {
+        dispatch({
+          type: "LoadAnnualCard/load/success",
           payload: data,
         });
       });

@@ -2,33 +2,25 @@ import Menu from "../Left Menu";
 import styles from "./App.module.css";
 import { Route, Switch } from "react-router-dom";
 import Warehouse from "../Warehouse";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import React, { useEffect } from "react";
 import {
   WarehouseCardInfo,
   warehouseInfo,
   WarehouseProduct,
 } from "../../redux/actions";
 import ProductIsInStock from "../the product is in stock";
+import Overview from "../Overview";
+import Finance from "../Finance";
+import TopUpYourBalance from "../Finance/SubWindow/TopUpYourBalance/TopUpYourBalance";
+import Rate from "../Finance/SubWindow/Rate";
 function App() {
-  const info = useSelector((state) => state.warehouseInfo.WarehouseInfo.data);
-  const id = info?.map((item) => item.warehouseExternalId)[12];
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(warehouseInfo());
-  }, []);
-
-  useEffect(() => {
-    if (info !== undefined) {
-      dispatch(WarehouseCardInfo(id));
-    }
-  }, [info]);
-
-  useEffect(() => {
-    if (info !== undefined) {
-      dispatch(WarehouseProduct(id));
-    }
-  }, [info]);
+    dispatch(WarehouseCardInfo());
+    dispatch(WarehouseProduct());
+  }, [dispatch]);
 
   return (
     <div className={styles.App}>
@@ -39,6 +31,18 @@ function App() {
         </Route>
         <Route exact path="/ProductIsInStock">
           <ProductIsInStock />
+        </Route>
+        <Route exact path="/Overview">
+          <Overview />
+        </Route>
+        <Route exact path="/Finance">
+          <Finance />
+        </Route>
+        <Route path="/Finance/TopUpYourBalance">
+          <TopUpYourBalance />
+        </Route>
+        <Route path="/Finance/Rate">
+          <Rate />
         </Route>
       </Switch>
     </div>

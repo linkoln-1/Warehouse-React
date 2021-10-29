@@ -1,0 +1,28 @@
+.Finance {
+  width: 74%;
+  margin-left: 30px;
+}
+.Navigation {
+  border-bottom: 1px solid #d5d5d5;
+}
+.FinanceCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.TopUpYourBalance,
+.InvoicesAndDocuments,
+.Rate,
+.OrderedServices,
+.OperationHistory,
+.AdditionalServices {
+  width: 355px;
+  padding: 20px 15px 20px 15px;
+  background-color: #f1f1f1;
+  color: black;
+  margin-bottom: 20px;
+  border: 1px solid #c2c2c2;
+  border-radius: 3px;
+  text-align: center;
+}

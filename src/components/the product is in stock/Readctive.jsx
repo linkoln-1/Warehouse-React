@@ -1,19 +1,12 @@
 import React from "react";
 import styles from "./ProductIsInStock.module.css";
-import { useDispatch, useSelector } from "react-redux";
-import { SaveCurrentInStock, WarehouseProduct } from "../../redux/actions";
+import { useDispatch } from "react-redux";
+import { SaveCurrentInStock } from "../../redux/actions";
 
-function Readctive({ currentStock, offerId, warehouseExternalId, handle }) {
-  let current = currentStock;
+function Readctive({ currentProduct, Onchange }) {
   const dispatch = useDispatch();
-  const info = useSelector((state) => state.warehouseInfo.WarehouseInfo.data);
-  const id = info?.map((item) => item.warehouseExternalId)[12];
-
   const handleSave = () => {
-    dispatch(SaveCurrentInStock(currentStock, offerId, warehouseExternalId));
-    if (info !== undefined) {
-      dispatch(WarehouseProduct(id));
-    }
+    dispatch(SaveCurrentInStock(currentProduct));
   };
 
   return (
@@ -24,10 +17,10 @@ function Readctive({ currentStock, offerId, warehouseExternalId, handle }) {
       <div className={styles.ModalStockInWarehousePro}>
         <span style={{ fontSize: 14, fontWeight: 500 }}>Доступно:</span>
         <input
-          value={current}
-          onChange={handle}
           className="form-control"
           type="text"
+          onChange={Onchange}
+          value={currentProduct}
         />
       </div>
 
@@ -59,14 +52,12 @@ function Readctive({ currentStock, offerId, warehouseExternalId, handle }) {
         </div>
 
         <div>
-          <span style={{ color: "#6C757D" }}>{current}</span>
+          <span style={{ color: "#6C757D" }}>{currentProduct}</span>
         </div>
       </div>
 
       <div className={styles.ButtonModal}>
-        <button className={styles.ButtonCancel}>Отмена</button>
-
-        <button onClick={handleSave} className={styles.ButtonSave}>
+        <button className={styles.ButtonSave} onClick={handleSave}>
           Сохранить
         </button>
       </div>

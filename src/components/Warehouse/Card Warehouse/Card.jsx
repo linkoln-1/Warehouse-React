@@ -4,10 +4,13 @@ import styles from "./Card.module.css";
 import redactingImage from "../../../images/Group 5.png";
 import ClockImage from "../../../images/clock-circular-outline 1.png";
 import calendarImage from "../../../images/calendar 1.png";
+import { useSelector } from "react-redux";
 
 function Card(props) {
-  const total = props.total;
-  let mins = props.card.data.slaCutIn;
+  const total = props.card.totalCount;
+  const Warehouse = useSelector((state) => state.warehouseInfo.WarehouseInfo);
+  const WarehouseName = Warehouse.map((name) => name.warehouseName);
+  let mins = props.card.slaCutIn;
   let getTimeFromMins = () => {
     let hours = Math.trunc(mins / 60);
     return hours + "ч";
@@ -17,17 +20,16 @@ function Card(props) {
     <div>
       <div className={styles.CardWarhouse}>
         <div className={styles.WarhouseKazanText}>
-          <p>{props.card.data.warehouseName}</p>
+          <p>{WarehouseName}</p>
           <div>
             <img style={{ marginRight: 16 }} src={redactingImage} alt="" />
           </div>
         </div>
         <div className="border-bottom">
           <p style={{ color: "#17A2B8" }}>
-            {props.card.data.address.zipcode}, {props.card.data.address.country}
-            ,{props.card.data.address.region},{props.card.data.address.city},{" "}
-            {props.card.data.address.street} {props.card.data.address.house},{" "}
-            {props.card.data.address.building}
+            {props.card.zipcode}, {props.card.country},{props.card.region},
+            {props.card.city}, {props.card.street} {props.card.house},{" "}
+            {props.card.building}
           </p>
         </div>
 

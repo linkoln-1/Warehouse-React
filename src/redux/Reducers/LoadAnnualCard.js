@@ -1,19 +1,19 @@
 const initialState = {
-  WarehouseProduct: [],
+  AnnualCard: [],
   loading: false,
 };
 
-export default function ProductWarehouse(state = initialState, action) {
+export default function AnnualCard(state = initialState, action) {
   switch (action.type) {
-    case "WarehouseProduct/load/start":
+    case "LoadAnnualCard/load/start":
       return {
         ...state,
         loading: true,
       };
-    case "WarehouseProduct/load/success":
+    case "LoadAnnualCard/load/success":
       return {
         ...state,
-        WarehouseProduct: action.payload,
+        AnnualCard: action.payload,
         loading: false,
       };
     default:

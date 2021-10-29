@@ -1,0 +1,38 @@
+.Rate {
+  width: 74%;
+  margin-left: 30px;
+}
+.UpText {
+  margin-top: 10px;
+}
+.Text {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.RateCards {
+  width: 150px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #efefef;
+  margin-bottom: 20px;
+}
+.RateCards p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.RateParent {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.DownText {
+  margin-top: 40px;
+  display: flex;
+  /*align-items: center;*/
+}
+.DownText p {
+  margin-left: 5px;
+}

@@ -13,7 +13,7 @@ export default function InfoCard(state = initialState, action) {
     case "cardInfo/load/success":
       return {
         ...state,
-        CardInfo: [action.payload],
+        CardInfo: action.payload,
         loading: false,
       };
     default:

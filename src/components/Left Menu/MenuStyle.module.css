@@ -53,17 +53,15 @@
   padding-top: 20px;
   margin-left: 20px;
 }
-
-/*================Menu*/
-ul{
+ul {
   padding: 0;
   margin: 0;
   margin-left: 36px;
-  color: #DBDDDF;
+  color: #dbdddf;
   list-style-type: none;
   font-size: 18px;
 }
-li{
+li {
   padding: 11px 0;
   cursor: pointer;
   max-width: 210px;
@@ -71,18 +69,18 @@ li{
 li:hover {
   color: #a4a3a3;
 }
-li a{
+li a {
   text-decoration: none;
-  color: #DBDDDF;
+  color: #dbdddf;
   padding: 0;
   margin: 0;
 }
 
-li img{
+li img {
   margin-right: 10px;
 }
-.Selected{
-  background-color: #DCDEE0;
+.Selected {
+  background-color: #dcdee0;
   color: #212529;
   padding: 11px 15px;
   margin-left: -15px;
@@ -92,16 +90,6 @@ li img{
 .Selected:hover {
   color: #212529;
 }
-
-
-
-
-
-
-
-
-
-
 .Footer {
   margin-top: 200px;
   box-shadow: 0 -12px 8px -7px rgba(0, 0, 0, 0.41);

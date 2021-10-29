@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.2",
     "jquery": "^3.6.0",
+    "json-server": "^0.17.0",
     "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -33,7 +34,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettify": "prettier --write ./src"
+    "prettify": "prettier --write ./src",
+    "watch": "npx json-server --watch db.json --port 8000",
+    "dev": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -52,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
   }
 }

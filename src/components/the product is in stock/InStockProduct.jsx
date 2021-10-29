@@ -1,27 +1,36 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import Products from "./Products";
-import CircularProgress from "@mui/material/CircularProgress";
-import Box from "@mui/material/Box";
-import styles from "./ProductIsInStock.module.css";
+import { useSelector } from "react-redux";
+import { Pagination, Stack } from "@mui/material";
+
 function InStockProduct(props) {
   const products = useSelector(
     (state) => state.WarehouseProduct.WarehouseProduct
   );
-  const loading = useSelector((state) => state.WarehouseProduct.loading);
+  const itemsPerPage = 10;
+  const [page, setPage] = React.useState(1);
+  const noOfPages = Math.ceil(products.length / itemsPerPage);
+  const handleChange = (event, value) => {
+    setPage(value);
+  };
+
   return (
     <div>
-      {loading ? (
-        <div className={styles.Spiner}>
-          <Box sx={{ display: "flex" }}>
-            <CircularProgress />
-          </Box>
-        </div>
-      ) : (
-        products.map((product, index) => {
-          return <Products product={product} key={index} />;
-        })
-      )}
+      {products
+        .slice((page - 1) * itemsPerPage, page * itemsPerPage)
+        .map((product) => {
+          return <Products product={product} key={product.id} />;
+        })}
+      <Stack>
+        <Pagination
+          count={noOfPages}
+          page={page}
+          onChange={handleChange}
+          defaultPage={1}
+          size="large"
+          style={{ margin: "auto" }}
+        />
+      </Stack>
     </div>
   );
 }

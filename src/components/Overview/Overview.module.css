@@ -1,0 +1,46 @@
+.Overview {
+  width: 74%;
+  margin-left: 30px;
+}
+.Navigation {
+  border-bottom: 1px solid #d5d5d5;
+}
+.Navigation p {
+  color: #a5a5a5;
+  margin-top: 15px;
+}
+.OverviewCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.OpeningALegalEntityInABank,
+.OverviewSettings,
+.OverviewRubles,
+.OverviewBarcode,
+.OverviewMarketPlays,
+.OverviewPriceList,
+.OverviewProductPackaging,
+.OverviewShipmentsAndWarehouses,
+.OverviewOrdersAndSalesAnalytics {
+  width: 355px;
+  padding: 20px 15px 20px 15px;
+  background-color: #17a2b8;
+  color: white;
+  margin-bottom: 20px;
+  border: 1px solid #17a2b8;
+  border-radius: 3px;
+  text-align: center;
+}
+.OpeningALegalEntityInABank img,
+.OverviewSettings img,
+.OverviewRubles img,
+.OverviewBarcode img,
+.OverviewMarketPlays img,
+.OverviewPriceList img,
+.OverviewProductPackaging img,
+.OverviewShipmentsAndWarehouses img,
+.OverviewOrdersAndSalesAnalytics img {
+  width: 25px;
+}
