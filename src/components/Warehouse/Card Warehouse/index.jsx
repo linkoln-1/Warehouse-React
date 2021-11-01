@@ -10,6 +10,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 function CardWarehouse() {
   const CardInfo = useSelector((state) => state.CardInfo.CardInfo);
   const loading = useSelector((state) => state.CardInfo.loading);
+ const products = useSelector((state) => state.WarehouseProduct.WarehouseProduct);
   return (
     <div>
       {loading ? (
@@ -21,7 +22,7 @@ function CardWarehouse() {
       ) : (
         <div>
           {CardInfo.map((card, index) => {
-            return <Card card={card} key={index} />;
+            return <Card card={card} key={index} total={products.length} />;
           })}
         </div>
       )}

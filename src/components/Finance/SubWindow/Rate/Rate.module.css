@@ -16,6 +16,7 @@
   padding: 10px;
   background-color: #efefef;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .RateCards p {
   margin: 0;
@@ -36,3 +37,58 @@
 .DownText p {
   margin-left: 5px;
 }
+.TwoMonthFree {
+  margin: 5px 0 0 5px;
+  width: 160px;
+  padding-top: 2px;
+  text-align:center;
+  border-radius: 50px;
+  background-color: green;
+  color: white;
+  height: 24px;
+  font-size: 14px;
+}
+.PayLikeParentBlock {
+  margin-top: 40px;
+}
+.PayLike1,.PayLike2,.PayLike3 {
+  margin-top: 20px;
+  width: 350px;
+  border: 1px solid #a5a5a5;
+  padding: 8px 8px 8px 8px;
+  border-radius: 4px;
+}
+.PayLike1 span,.PayLike2 span,.PayLike3 span {
+  margin-left: 8px;
+  font-weight: 500;
+}
+.SelectTimeZone {
+  margin-top: 20px;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #a5a5a5;
+}
+.SelectBusinessMonthly, .SelectBusinessAnnual{
+  border: 1px solid #7ea6dd;
+  background-color: #7ea6dd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

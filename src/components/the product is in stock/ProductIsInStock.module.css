@@ -197,3 +197,15 @@
   margin: 20px auto;
   width: 100px;
 }
+.FooterWithPagination {
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  justify-content: space-between;
+}
+.SelectProductsPerPage {
+  padding: 11px 9px;
+  border: 1.5px solid gainsboro;
+  border-radius: 5px;
+  margin-left: 10px;
+}

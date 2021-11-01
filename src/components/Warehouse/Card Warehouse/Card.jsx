@@ -7,7 +7,7 @@ import calendarImage from "../../../images/calendar 1.png";
 import { useSelector } from "react-redux";
 
 function Card(props) {
-  const total = props.card.totalCount;
+  const total = props.total;
   const Warehouse = useSelector((state) => state.warehouseInfo.WarehouseInfo);
   const WarehouseName = Warehouse.map((name) => name.warehouseName);
   let mins = props.card.slaCutIn;
