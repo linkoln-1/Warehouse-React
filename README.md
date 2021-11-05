@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# **Warehouses-business**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Один из командных проектов, который дал мне большой толчок к развитию моих навыков как программиста.
+Это был довольно сложный проект и интересный проект, было много разных интересных задач над которыми
+я и мой коллега думали, решали, реализовывали.
 
-## Available Scripts
+- При запуске проекта нас встречает вот такой минималистический вид приложения
 
-In the project directory, you can run:
 
-### `npm start`
+![img_1.png](files/2021-11-05_14-51-52.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- После начала использования приложения, Вы можете попасть на несколько уже реализованных вкладок.
+  Вот например открытая вкладка "Склады".
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+![img_2.png](files/2021-11-05_14-57-24.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## **Функционал, Возможности и будущие возможности приложения.**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Доступ к разным складам нашей страны <br>
+- Просмотр продукции на тех или иных складах.<br>
+- Сопоставление одного продукта с продуктом лежащим на другом складе. <br>
+- Поиск по Артикулам продукта внутри складов.  <br>
+- Изменение остатков на складе.<br>
+- Контроль над своими заказами.<br>
+- Просмотр аналитики.<br>
+- Просмотр и изменение Маркетплейса.<br>
+- Просмотр продукции.<br>
+- Просмотр отгрузок и складов.<br>
+- пагинация.<br>
+- Возможность выбора количества отображения товара на складах.<br> 
+и многие другие возможности.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- На данном фото наглядно видно в каком стиле отображаются продукты находящиеся на одном из складов
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+![img_3.png](files/2021-11-05_14-57-52.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Затем на этом фото вы видите то каким образом можно изменять остаток товара на складе
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![img_4.png](files/2021-11-05_14-58-25.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+- Далее мы можем перейти на вкладку "Обзор", и мы можем увидеть небольшое меню с разными вкладками.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![img_5.png](files/2021-11-05_14-58-44.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

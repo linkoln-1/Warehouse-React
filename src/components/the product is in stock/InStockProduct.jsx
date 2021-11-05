@@ -8,7 +8,7 @@ function InStockProduct(props) {
   const products = useSelector(
     (state) => state.WarehouseProduct.WarehouseProduct
   );
-  const [itemsPerPage, setItemPerPage] = useState(10) ;
+  const [itemsPerPage, setItemPerPage] = useState(3) ;
   const [page, setPage] = React.useState(1);
   const noOfPages = Math.ceil(products.length / itemsPerPage);
   const handleChange = (event, value) => {
