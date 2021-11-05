@@ -9,7 +9,7 @@ function HeaderProductIsInStock(props) {
     <div className={styles.HeaderProductIsInStock}>
       <div className={styles.ImageBurgerProductIsInStock}>
         <img src={burgerMenu} alt="" />
-        <p>Товары на складе «РФБС»</p>
+        <p>Товары на складе «AOPPA ГРУПП»</p>
       </div>
       <div className={styles.LanguageSettingsProductIsInStock}>
         <div className={styles.LanguageProductIsInStock}>
