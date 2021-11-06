@@ -3,7 +3,7 @@ export const warehouseInfo = () => {
     dispatch({
       type: "Warehouse/load/start",
     });
-    fetch(`http://localhost:8000/Warehouse`)
+    fetch(`/Warehouse`)
       .then((res) => res.json())
       .then((json) => {
         dispatch({
@@ -19,7 +19,7 @@ export const WarehouseCardInfo = () => {
     dispatch({
       type: "cardInfo/load/start",
     });
-    fetch(`http://localhost:8000/address`)
+    fetch(`/address`)
       .then((response) => response.json())
       .then((json) => {
         dispatch({
@@ -35,7 +35,7 @@ export const WarehouseProduct = () => {
     dispatch({
       type: "WarehouseProduct/load/start",
     });
-    fetch(`http://localhost:8000/productsList`)
+    fetch(`/productsList`)
       .then((response) => response.json())
       .then((data) => {
         dispatch({
@@ -52,7 +52,7 @@ export const SaveCurrentInStock = (currentProduct) => {
     dispatch({
       type: "save/load/start",
     });
-    fetch(`http://localhost:8000/productsList`, {
+    fetch(`/productsList`, {
       method: "POST",
       body: JSON.stringify({
         currentStockInMyWarehouse: currentProduct,
@@ -75,7 +75,7 @@ export const LoadRateCard = () => {
     dispatch({
       type: "LoadRateCard/load/start",
     });
-    fetch(`http://localhost:8000/monthly`)
+    fetch(`/monthly`)
       .then((response) => response.json())
       .then((data) => {
         dispatch({
@@ -90,7 +90,7 @@ export const LoadAnnualCard = () => {
     dispatch({
       type: "LoadAnnualCard/load/start",
     });
-    fetch(`http://localhost:8000/annual`)
+    fetch(`/annual`)
       .then((response) => response.json())
       .then((data) => {
         dispatch({
