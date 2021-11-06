@@ -70,7 +70,22 @@
 
 ![img_8.png](files/2021-11-05_15-00-37.png)
 
+-------------------------------------------------------------------------------------------------------------
 
+## **В данном приложении были использованы такие технологии как:**
+
+![React](https://img.shields.io/badge/-React-blue)
+![Material-UI](https://img.shields.io/badge/-MaterialUI-blue)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-blue)
+![Json-Server](https://img.shields.io/badge/-JsonServer-blue)
+![Prettier](https://img.shields.io/badge/-Prettier-blue)
+![React-Router-Dom](https://img.shields.io/badge/-ReactRouterDom-blue)
+![React-icons](https://img.shields.io/badge/-React/Icons-blue)
+![React-input-slider](https://img.shields.io/badge/-React/Input/Slider-blue)
+![React-Redux](https://img.shields.io/badge/-React/Redux-blue)
+![React-Thunk](https://img.shields.io/badge/-React/Thunk-blue)
+![Styled-Components](https://img.shields.io/badge/-Styled/Components-blue)
+![React](https://img.shields.io/badge/-React-blue)
 
 
 
