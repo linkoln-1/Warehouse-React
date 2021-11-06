@@ -85,7 +85,6 @@
 ![React-Redux](https://img.shields.io/badge/-React/Redux-blue)
 ![React-Thunk](https://img.shields.io/badge/-React/Thunk-blue)
 ![Styled-Components](https://img.shields.io/badge/-Styled/Components-blue)
-![React](https://img.shields.io/badge/-React-blue)
 
 
 
