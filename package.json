@@ -2,7 +2,6 @@
   "name": "warehouse-react-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8000",
   "dependencies": {
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
@@ -38,6 +37,7 @@
     "watch": "npx json-server --watch db.json --port 8000",
     "dev": "nodemon server.js"
   },
+  "proxy": "http://localhost:8000",
   "eslintConfig": {
     "extends": [
       "react-app",
