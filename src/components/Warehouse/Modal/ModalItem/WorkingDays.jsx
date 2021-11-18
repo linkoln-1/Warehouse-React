@@ -23,7 +23,6 @@ function WorkingDays(props) {
     });
     setWeek(days);
   };
-  console.log(week);
 
   return (
     <div>
